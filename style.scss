@@ -1,0 +1,96 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav
+{
+    background-color: rgb(59, 58, 58);
+    color: white;
+    display: flex;
+    flex-flow: column;
+    padding: 1%;
+    .nav-heading
+    {
+        display: inline-block;
+        text-align: center;
+        font-size: xx-large;
+    }
+    .user-inputs
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 2%;
+        .array-size
+        {
+            display: flex;
+            margin-top: 3%;
+            p
+            {
+                display: inline;
+                padding-right: 20px;
+            }
+        }
+        .algos
+        {
+            display: flex;
+            margin-top: 2%;
+            ul
+            {
+                display: flex;
+                margin-left:2%;
+                list-style: none;
+                li
+                {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-evenly;
+                    margin: 0px .1%;
+                    button
+                    {
+                        background-color: transparent;
+                        border: none;
+                        color: white;
+                        outline: none;
+                        padding: 5%;
+                        width:150px;
+                        &:hover
+                        {
+                            cursor: pointer;
+                            background-color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section
+{
+    display: flex;
+    margin: 3%;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 500px;
+}
+
+@media (max-width: 480px)//Mobiles
+{
+    
+}
+
+@media (min-width: 481px) and (max-width: 1250px)//Tablets
+{
+
+}
+
+@media (min-width: 1251px)//Laptops and up
+{
+
+}

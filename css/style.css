@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #3b3a3a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 1%;
+}
+
+nav .nav-heading {
+  display: inline-block;
+  text-align: center;
+  font-size: xx-large;
+}
+
+nav .user-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 2%;
+}
+
+nav .user-inputs .array-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3%;
+}
+
+nav .user-inputs .array-size p {
+  display: inline;
+  padding-right: 20px;
+}
+
+nav .user-inputs .algos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2%;
+}
+
+nav .user-inputs .algos ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2%;
+  list-style: none;
+}
+
+nav .user-inputs .algos ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0px .1%;
+}
+
+nav .user-inputs .algos ul li button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5%;
+  width: 150px;
+}
+
+nav .user-inputs .algos ul li button:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3%;
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 500px;
+}
+/*# sourceMappingURL=style.css.map */
