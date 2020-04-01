@@ -55,17 +55,28 @@ nav
                     background-color: blue;
                 }
             }
+            .butt_selected
+            {
+                background-color: blue;
+            }
         }
     }
 }
 
 section
 {
-    display: grid;
-    margin: 3%;
-    border-radius: 5px;
-    border: 1px solid black;
-    height: 500px;
+    margin:0% 20%;
+    #array_container
+    {
+        display: flex;
+        width: 100%;
+        height: 70vh;
+    }
+}
+
+.hide
+{
+    display: none;
 }
 
 /*
