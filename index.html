@@ -14,19 +14,18 @@
         <nav>
             <p class="nav-heading">Sorting visualizer</p>
             <div class="user-inputs">
-                <div class="array-size">
-                    <p>Size of the array:</p><input type="range">
+                <div class="array-inputs">
+                    <p>Size of the array:</p>
+                    <input id="a_size" type="range" min=5 max=50 step=1 value=25>
                 </div>
                 <div class="algos">
-                    <ul>
-                        <li><button>Bubble</button></li>
-                        <li><button>Selection</button></li>
-                        <li><button>Insertion</button></li>
-                        <li><button>Merge</button></li>
-                        <li><button>Quick</button></li>
-                        <li><button>Heap</button></li>
-                        <li style="margin-right: 0px;"><button>Bucket</button></li>
-                    </ul>
+                    <button>Bubble</button>
+                    <button>Selection</button>
+                    <button>Insertion</button>
+                    <button>Merge</button>
+                    <button>Quick</button>
+                    <button>Heap</button>
+                    <button style="margin-right: 0px;">Bucket</button>
                 </div>
             </div>
         </nav>
@@ -34,7 +33,7 @@
 
     <section>
         <div>
-            The Visualizations will be shown here
+            <p id="msg">The Visualizations will be shown here</p>
         </div>
     </section>
 
@@ -42,6 +41,6 @@
 
     </footer>
 
-    <script></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

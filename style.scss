@@ -1,3 +1,5 @@
+$no_algos: 7;
+
 *
 {
     margin: 0px;
@@ -23,48 +25,34 @@ nav
     }
     .user-inputs
     {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 20% 70%;
+        column-gap: 10%;
+        justify-content: center;
         margin: 0px 2%;
-        .array-size
+        margin-top: 2%;
+        .array-inputs
         {
-            display: flex;
-            margin-top: 3%;
-            p
-            {
-                display: inline;
-                padding-right: 20px;
-            }
+            display: grid;
+            grid-template-columns: 60% 40%;
+            place-content: center;
         }
         .algos
         {
-            display: flex;
-            margin-top: 2%;
-            ul
+            display: grid;
+            grid-template-columns: repeat($no_algos,(100%/$no_algos));
+            place-content: center;
+            button
             {
-                display: flex;
-                margin-left:2%;
-                list-style: none;
-                li
+                background-color: transparent;
+                border: none;
+                color: white;
+                outline: none;
+                padding: 5% 0%;
+                &:hover
                 {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    justify-content: space-evenly;
-                    margin: 0px .1%;
-                    button
-                    {
-                        background-color: transparent;
-                        border: none;
-                        color: white;
-                        outline: none;
-                        padding: 5%;
-                        width:150px;
-                        &:hover
-                        {
-                            cursor: pointer;
-                            background-color: blue;
-                        }
-                    }
+                    cursor: pointer;
+                    background-color: blue;
                 }
             }
         }
@@ -73,13 +61,14 @@ nav
 
 section
 {
-    display: flex;
+    display: grid;
     margin: 3%;
     border-radius: 5px;
     border: 1px solid black;
     height: 500px;
 }
 
+/*
 @media (max-width: 480px)//Mobiles
 {
     
@@ -94,3 +83,4 @@ section
 {
 
 }
+*/

@@ -27,77 +27,71 @@ nav .nav-heading {
 }
 
 nav .user-inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 70%;
+      grid-template-columns: 20% 70%;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0px 2%;
-}
-
-nav .user-inputs .array-size {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3%;
-}
-
-nav .user-inputs .array-size p {
-  display: inline;
-  padding-right: 20px;
-}
-
-nav .user-inputs .algos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 2%;
 }
 
-nav .user-inputs .algos ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2%;
-  list-style: none;
+nav .user-inputs .array-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  place-content: center;
 }
 
-nav .user-inputs .algos ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 0px .1%;
+nav .user-inputs .algos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (14.28571%)[7];
+      grid-template-columns: repeat(7, 14.28571%);
+  place-content: center;
 }
 
-nav .user-inputs .algos ul li button {
+nav .user-inputs .algos button {
   background-color: transparent;
   border: none;
   color: white;
   outline: none;
-  padding: 5%;
-  width: 150px;
+  padding: 5% 0%;
 }
 
-nav .user-inputs .algos ul li button:hover {
+nav .user-inputs .algos button:hover {
   cursor: pointer;
   background-color: blue;
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   margin: 3%;
   border-radius: 5px;
   border: 1px solid black;
   height: 500px;
 }
+
+/*
+@media (max-width: 480px)//Mobiles
+{
+    
+}
+
+@media (min-width: 481px) and (max-width: 1250px)//Tablets
+{
+
+}
+
+@media (min-width: 1251px)//Laptops and up
+{
+
+}
+*/
 /*# sourceMappingURL=style.css.map */
