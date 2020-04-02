@@ -70,7 +70,8 @@ nav .user-inputs .algos button:hover {
 }
 
 nav .user-inputs .algos .butt_selected {
-  background-color: blue;
+  background-color: white;
+  color: green;
 }
 
 section {

@@ -43,15 +43,20 @@ function update_array_size()
     generate_array();
 }
 
-function runalgo()
+function disable_buttons()
 {
-    console.log(this.innerHTML);
     for(var i=0;i<butts_algos.length;i++)
     {
         butts_algos[i].className.replace("butt_selected","");
-        butts_algos[i].className.replace("  "," ");
+        butts_algos[i].disabled=true;
     }
-    this.className+=" butt_selected";
+}
+
+function runalgo()
+{
+    disable_buttons();
+
+    this.className+="butt_selected";
     switch(this.innerHTML)
     {
         case "Bubble":Bubble(div_sizes,divs,cont,array_size);
