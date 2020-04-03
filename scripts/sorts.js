@@ -9,7 +9,10 @@ function enable_buttons()
 {
     for(var i=0;i<butts_algos.length;i++)
     {
-        butts_algos[i].className.replace("butt_selected","");
+        butts_algos[i].classList=[];
+        butts_algos[i].classList.add("butt_unselected");
+
+        inp_as.disabled=false;
         butts_algos[i].disabled=false;
     }
 }
@@ -63,8 +66,6 @@ function Bubble(div_sizes,divs,cont,n)
 
     window.setTimeout(enable_buttons,c_delay_time);
 }
-
-
 
 function Selection_sort(div_sizes,divs,cont,n)
 {
@@ -123,4 +124,80 @@ function Selection_sort(div_sizes,divs,cont,n)
     }
     window.setTimeout(div_update,c_delay_time,divs[i],margin_size,(100/array_size-(2*margin_size)),(div_sizes[i]),"green");//Height update
     c_delay_time+=delay_time;
+
+    window.setTimeout(enable_buttons,c_delay_time);
+}
+
+function Insertion(div_sizes,divs,cont,n)
+{
+    var array_size=n;
+    var margin_size=0.1;
+    var factor=Math.floor(n/10);
+    var delay_time=8/factor;        //Decrease numerator to increase speed.
+
+    var c_delay_time=delay_time;
+
+    for(var j=0;j<n;j++)
+    {
+        window.setTimeout(div_update,c_delay_time,divs[j],margin_size,(100/array_size-(2*margin_size)),(div_sizes[j]),"yellow");//Color update
+        c_delay_time+=delay_time;
+
+        var key= div_sizes[j];
+        var i=j-1;
+        while(i>=0 && div_sizes[i]>key)
+        {
+            window.setTimeout(div_update,c_delay_time,divs[i],margin_size,(100/array_size-(2*margin_size)),(div_sizes[i]),"red");//Color update
+            c_delay_time+=delay_time;
+            window.setTimeout(div_update,c_delay_time,divs[i+1],margin_size,(100/array_size-(2*margin_size)),(div_sizes[i+1]),"red");//Color update
+            c_delay_time+=delay_time;
+
+            div_sizes[i+1]=div_sizes[i];
+
+            window.setTimeout(div_update,c_delay_time,divs[i],margin_size,(100/array_size-(2*margin_size)),(div_sizes[i]),"red");//Height update
+            c_delay_time+=delay_time;
+            window.setTimeout(div_update,c_delay_time,divs[i+1],margin_size,(100/array_size-(2*margin_size)),(div_sizes[i+1]),"red");//Height update
+            c_delay_time+=delay_time;
+
+            window.setTimeout(div_update,c_delay_time,divs[i],margin_size,(100/array_size-(2*margin_size)),(div_sizes[i]),"blue");//Color update
+            c_delay_time+=delay_time;
+            if(i==(j-1))
+            {
+                window.setTimeout(div_update,c_delay_time,divs[i+1],margin_size,(100/array_size-(2*margin_size)),(div_sizes[i+1]),"yellow");//Color update
+                c_delay_time+=delay_time;
+            }
+            else
+            {
+                window.setTimeout(div_update,c_delay_time,divs[i+1],margin_size,(100/array_size-(2*margin_size)),(div_sizes[i+1]),"blue");//Color update
+                c_delay_time+=delay_time;
+            }
+            i-=1;
+        }
+
+        div_sizes[i+1]=key;
+
+        for(var t=0;t<j;t++)
+        {
+            window.setTimeout(div_update,c_delay_time,divs[t],margin_size,(100/array_size-(2*margin_size)),(div_sizes[t]),"green");//Color update
+            c_delay_time+=delay_time;
+        }
+    }
+
+    window.setTimeout(div_update,c_delay_time,divs[j-1],margin_size,(100/array_size-(2*margin_size)),(div_sizes[j-1]),"green");//Color update
+    c_delay_time+=delay_time;
+
+    window.setTimeout(enable_buttons,c_delay_time);
+}
+
+function Merge(div_sizes,divs,cont,n)
+{
+    var array_size=n;
+    var margin_size=0.1;
+    var factor=Math.floor(n/10);
+    var delay_time=8/factor;        //Decrease numerator to increase speed.
+
+    var c_delay_time=delay_time;
+
+    //sort logic
+
+    window.setTimeout(enable_buttons,c_delay_time);
 }

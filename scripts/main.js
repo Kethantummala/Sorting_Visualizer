@@ -47,7 +47,10 @@ function disable_buttons()
 {
     for(var i=0;i<butts_algos.length;i++)
     {
-        butts_algos[i].className.replace("butt_selected","");
+        butts_algos[i].classList=[];
+        butts_algos[i].classList.add("butt_locked");
+
+        inp_as.disabled=true;
         butts_algos[i].disabled=true;
     }
 }
@@ -56,7 +59,7 @@ function runalgo()
 {
     disable_buttons();
 
-    this.className+="butt_selected";
+    this.classList.add("butt_selected");
     switch(this.innerHTML)
     {
         case "Bubble":Bubble(div_sizes,divs,cont,array_size);

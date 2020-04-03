@@ -51,14 +51,37 @@ nav
                 padding: 5% 0%;
                 &:hover
                 {
-                    cursor: pointer;
                     background-color: blue;
+                    cursor: pointer;
+                }
+            }
+            .butt_locked
+            {
+                background-color: transparent;
+                cursor: pointer;
+                &:hover
+                {
+                    background-color: transparent;
+                    cursor: pointer;
                 }
             }
             .butt_selected
             {
                 background-color: white;
                 color:green;
+                &:hover
+                {
+                    background-color: white;
+                    cursor: pointer;
+                }
+            }
+            .butt_unselected
+            {
+                &:hover
+                {
+                    background-color: blue;
+                    cursor: pointer;
+                }
             }
         }
     }

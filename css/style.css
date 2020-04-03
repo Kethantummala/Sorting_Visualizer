@@ -65,13 +65,33 @@ nav .user-inputs .algos button {
 }
 
 nav .user-inputs .algos button:hover {
-  cursor: pointer;
   background-color: blue;
+  cursor: pointer;
+}
+
+nav .user-inputs .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .user-inputs .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
 }
 
 nav .user-inputs .algos .butt_selected {
   background-color: white;
   color: green;
+}
+
+nav .user-inputs .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav .user-inputs .algos .butt_unselected:hover {
+  background-color: blue;
+  cursor: pointer;
 }
 
 section {
