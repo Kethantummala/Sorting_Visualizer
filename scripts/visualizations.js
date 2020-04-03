@@ -7,7 +7,23 @@
 
 //We only have to change background-color and height of the sorting element.
 
-var delay_time=8/Math.floor(array_size/10);        //Decrease numerator to increase speed.
+var speed=1000;
+/*
+switch(array_speed)
+{
+    case 1: speed=1;
+            break;
+    case 2: speed=10;
+            break;
+    case 3: speed=100;
+            break;
+    case 4: speed=1000;
+            break;
+    case 5: speed=10000;
+            break;
+}
+*/
+var delay_time=10000/(Math.floor(array_size/10)*speed);        //Decrease numerator to increase speed.
 var c_delay;//This is updated ov every div change so that visualization is visible.
 
 function div_update(cont,height,color)
