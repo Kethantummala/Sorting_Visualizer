@@ -1,7 +1,7 @@
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */
 
@@ -95,6 +95,6 @@ function runalgo()
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */

@@ -1,7 +1,6 @@
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
     *****************
 */
 * {
@@ -126,8 +125,29 @@ section {
       grid-template-columns: 20% 60% 20%;
 }
 
+section .Complexity_Containers {
+  margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions {
+  margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+}
+
 section #Info_Cont1 {
-  padding: 20%;
+  padding: 20% 10%;
+}
+
+section #Info_Cont1 h3 {
+  text-decoration: underline;
 }
 
 section #array_container {
@@ -139,7 +159,11 @@ section #array_container {
 }
 
 section #Info_Cont2 {
-  padding: 20%;
+  padding: 20% 10%;
+}
+
+section #Info_Cont2 h3 {
+  text-decoration: underline;
 }
 
 .hide {
@@ -165,7 +189,6 @@ section #Info_Cont2 {
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
     *****************
 */
 /*# sourceMappingURL=style.css.map */

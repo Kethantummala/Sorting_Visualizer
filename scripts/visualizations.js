@@ -1,7 +1,7 @@
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */
 
@@ -60,6 +60,6 @@ function enable_buttons()
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */

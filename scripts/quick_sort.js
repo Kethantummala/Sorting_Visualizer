@@ -1,12 +1,20 @@
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */
 
 function Quick()
 {
+    //Setting Time complexities
+    document.getElementById("Time_Worst").innerText="O(N^2)";
+    document.getElementById("Time_Average").innerText="Θ(N log N)";
+    document.getElementById("Time_Best").innerText="Ω(N log N)";
+
+    //Setting Space complexity
+    document.getElementById("Space_Worst").innerText="O(log N)";
+
     c_delay=0;
 
     quick_sort(0,array_size-1);
@@ -75,6 +83,6 @@ function quick_sort (start, end )
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */

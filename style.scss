@@ -1,7 +1,6 @@
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
     *****************
 */
 
@@ -123,9 +122,36 @@ section
 {
     display: grid;
     grid-template-columns: 20% 60% 20%;
+
+    .Complexity_Containers {
+
+        margin-top: 20%;
+
+        .Pair_Definitions {
+
+            margin-top: 20%;
+
+            p {
+                display: inline;
+            }
+
+            p.Sub_Heading {
+                font-size:medium;
+                text-transform: none;
+            }
+
+        }
+
+    }
+
     #Info_Cont1
     {
-        padding: 20%;
+        padding: 20% 10%;
+
+        h3 {
+            text-decoration: underline;
+        }
+        
     }
     #array_container
     {
@@ -135,7 +161,12 @@ section
     }
     #Info_Cont2
     {
-        padding: 20%;
+        padding: 20% 10%;
+
+        h3 {
+            text-decoration: underline;
+        }
+
     }
 }
 
@@ -164,6 +195,5 @@ section
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
     *****************
 */

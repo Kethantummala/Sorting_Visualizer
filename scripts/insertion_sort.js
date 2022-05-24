@@ -1,12 +1,20 @@
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */
 
 function Insertion()
 {
+    //Setting Time complexities
+    document.getElementById("Time_Worst").innerText="O(N^2)";
+    document.getElementById("Time_Average").innerText="Θ(N^2)";
+    document.getElementById("Time_Best").innerText="Ω(N)";
+
+    //Setting Space complexity
+    document.getElementById("Space_Worst").innerText="O(1)";
+
     c_delay=0;
 
     for(var j=0;j<array_size;j++)
@@ -51,6 +59,6 @@ function Insertion()
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */

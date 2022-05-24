@@ -1,12 +1,20 @@
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */
 
 function Merge()
 {
+    //Setting Time complexities
+    document.getElementById("Time_Worst").innerText="O(N log N)";
+    document.getElementById("Time_Average").innerText="Θ(N log N)";
+    document.getElementById("Time_Best").innerText="Ω(N log N)";
+
+    //Setting Space complexity
+    document.getElementById("Space_Worst").innerText="O(N)";
+
     c_delay=0;
 
     merge_partition(0,array_size-1);
@@ -68,6 +76,6 @@ function merge_partition(start,end)
 /*
     *****************
     DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
+    
     *****************
 */
